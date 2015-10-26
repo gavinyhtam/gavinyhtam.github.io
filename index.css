@@ -1,0 +1,21 @@
+.jumbotron {
+	text-align: center;
+}
+
+#banner-inner {
+	background-image: url("test.jpg");
+}
+
+#banner {
+	height: 50%;
+}
+
+.ppl {
+	padding: 30px;
+	text-align: center;
+}
+
+.ppl img {
+	width: 50%;
+	height: 50%;
+}
