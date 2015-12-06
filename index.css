@@ -3,11 +3,26 @@
 }
 
 #banner-inner {
-	background-image: url("test.jpg");
+	height: 50%;
+  background: url("finsoc banner.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% auto;
 }
 
 #banner {
-	height: 50%;
+	//height: 50%;
+	//clip: rect(0%, 20%, 20%, 0%);
+}
+
+.section-title {
+	text-align: center;
+	//color: #999999;
+}
+
+.section-title h1 {
+	font-weight: bold;
 }
 
 .ppl {
@@ -17,5 +32,67 @@
 
 .ppl img {
 	width: 50%;
-	height: 50%;
+	max-width: 200px;
+	height: auto;
+	clip: rect(20%, 0%, 20%, 0%);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	padding-bottom: 15px;
+}
+
+.ppl-container {
+	padding: 20px;
+}
+
+.ppl-container:hover {
+	background-color: #E4EFEF;
+}
+
+.ppl hr {
+	border: none;
+	height: 5px;
+	background-color: black;
+	width: 50%;
+}
+
+.name {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.row {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.row > h2 {
+	margin-left: 50px;
+}
+
+#footer {
+	width: 100%;
+	min-height: 50px;
+	background-color: black;
+	padding-top: 10px;
+  	/*display: flex;
+  	align-items : center;
+	*/
+}
+
+
+#footer p {
+	color: grey;
+}
+
+#footer-icon {
+	color: red;
+}
+
+#produced-by {
+	overflow: auto;
+}
+
+#produced-by > * {
+	float: right;
 }

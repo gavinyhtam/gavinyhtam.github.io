@@ -1,0 +1,24 @@
+.navbar {
+	background-color: white;
+  /*
+	background: -webkit-linear-gradient(left, white, #EEEEEE);
+  background: -o-linear-gradient(left, white, #EEEEEE);
+  background: -moz-linear-gradient(left, white, #EEEEEE);
+  background: linear-gradient(left, white, #EEEEEE);
+	*/
+	border-color: white;
+}
+
+#top-navbar a:hover {
+	color: black;
+	font-weight: bold;
+}
+
+#top-navbar {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#social-media-bar {
+	padding-left: 30px;
+}
