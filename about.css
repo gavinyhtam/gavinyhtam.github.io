@@ -1,0 +1,53 @@
+.section-title {
+	text-align: center;
+	//color: #999999;
+}
+
+.section-title h1 {
+	font-weight: bold;
+}
+
+.ppl {
+	padding: 30px;
+	text-align: center;
+}
+
+.ppl img {
+	width: 50%;
+	max-width: 200px;
+	height: auto;
+	clip: rect(20%, 0%, 20%, 0%);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.ppl-container {
+	padding: 20px;
+}
+
+.ppl-container:hover {
+	background-color: #E4EFEF;
+}
+
+.ppl hr {
+	border: none;
+	height: 5px;
+	background-color: black;
+	width: 50%;
+}
+
+.name {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.row {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.row > h2 {
+	margin-left: 50px;
+}

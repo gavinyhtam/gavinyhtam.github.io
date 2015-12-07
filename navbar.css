@@ -9,6 +9,10 @@
 	border-color: white;
 }
 
+body {
+	margin-top: 80px;
+}
+
 #top-navbar a:hover {
 	color: black;
 	font-weight: bold;
