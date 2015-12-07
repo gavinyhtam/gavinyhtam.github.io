@@ -13,9 +13,10 @@ body {
 	margin-top: 80px;
 }
 
-#top-navbar a:hover {
+#top-navbar li:hover {
 	color: black;
 	font-weight: bold;
+	background-color: #337AB7;
 }
 
 #top-navbar {
