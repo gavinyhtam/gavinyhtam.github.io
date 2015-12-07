@@ -13,9 +13,13 @@ body {
 	margin-top: 80px;
 }
 
-#top-navbar li:hover {
-	color: black;
+#top-navbar a {
 	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#top-navbar li:hover {
+	color: white;
 	background-color: #337AB7;
 }
 
