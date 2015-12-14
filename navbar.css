@@ -1,16 +1,14 @@
 .navbar {
 	background-color: white;
-  /*
-	background: -webkit-linear-gradient(left, white, #EEEEEE);
-  background: -o-linear-gradient(left, white, #EEEEEE);
-  background: -moz-linear-gradient(left, white, #EEEEEE);
-  background: linear-gradient(left, white, #EEEEEE);
-	*/
 	border-color: white;
 }
 
 body {
-	margin-top: 80px;
+	margin-top: 65px;
+}
+
+.navbar-toggle {
+	background-color: black;
 }
 
 #top-navbar a {
@@ -18,21 +16,45 @@ body {
 	text-transform: uppercase;
 }
 
-#top-navbar li:hover {
+#top-navbar li.navbar-item:hover {
 	color: white;
 	background-color: #337AB7;
-	-webkit-transition: background-color 1000ms linear;
-    -moz-transition: background-color 1000ms linear;
-    -o-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+	-webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 
 #top-navbar {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 #social-media-bar {
 	padding-left: 30px;
+}
+
+#facebook-icon {
+	color: #3b5998;
+}
+
+#facebook-icon:hover {
+	color: #4b69a8;
+}
+
+#twitter-icon {
+	color: #00aced;
+}
+
+#twitter-icon:hover {
+	color: #00ccfd;
+}
+
+#linkedin-icon {
+	color: #007bb5;
+}
+
+#linkedin-icon:hover {
+	color: #009bd5;
 }

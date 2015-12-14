@@ -13,38 +13,11 @@
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-	<script>
-	  window.fbAsyncInit = function() {
-		 FB.init({
-		   appId      : '876814169101253',
-		   xfbml      : true,
-		   version    : 'v2.5'
+    <!--script> 
+		 $(function(){
+		   $("#finsoc-navbar").load("http://gavinyhtam.github.io/navbar.html"); 
 		 });
-
-		/* make the API call */
-		//TODO get app access token
-		FB.api(
-			 "/148979452123911/events", 
-			 function (response) {
-				console.log(response);
-				if (response && !response.error) {
-				  if (response.data != null) {
-						document.getElementById("test").innerHTML += response.data[0].description;
-					}
-				}
-			 }
-		);
-	  };
-
-	  (function(d, s, id){
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) {return;}
-		  js = d.createElement(s); js.id = id;
-		  js.src = "https://connect.facebook.net/en_US/sdk.js";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-<div id="wrapper">
+    </script-->
 	<div id="finsoc-navbar">
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		 <div class="container">
@@ -66,13 +39,13 @@
 						<li class="navbar-item"><a href="contact-us.html">Contact Us</a></li>
 						<li>
 							<nav id="social-media-bar">
-								 <a id="facebook-icon" href="https://www.facebook.com/UNSWFinanceSociety/?fref=ts" target="_blank">
+								 <a href="https://www.facebook.com/UNSWFinanceSociety/?fref=ts" target="_blank">
 									<i class="fa fa-facebook-square fa-3x"></i>
 								 </a>
-								 <a id="linkedin-icon" href="/" target="_blank">
+								 <a href="/" target="_blank">
 									<i class="fa fa-linkedin-square fa-3x"></i>
 								 </a>
-								 <a id="twitter-icon" href="https://twitter.com/finsoc" target="_blank">
+								 <a href="https://twitter.com/finsoc" target="_blank">
 									<i class="fa fa-twitter-square fa-3x"></i>
 								 </a>
 							</nav>
@@ -84,54 +57,39 @@
 
 	</div>
 
-	<div id="events-carousel" class="carousel slide" data-ride="carousel">
-		<div id="event-box">
-			<h1>EVENTS</h1>
-			<a class="white-colour-link" href="events.html">
-				<span class="glyphicon glyphicon-chevron-right arrow-link" aria-hidden="true"></span>More info
-			</a>
-		</div>
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
-		 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	  </ol>
-
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner" role="listbox">
-		 <div class="item active carousel-img">
-		   <img src="test.jpg" alt="Chania">
-		 </div>
-	  </div>
-
-	  <!-- Left and right controls -->
-	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		 <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		 <span class="sr-only">Next</span>
-	  </a>
+	<div class="title">
+		<h1>EVENTS</h1>
 	</div>
 
 	<div class="banner">
 		<div id="mission" class="jumbotron banner-inner">
 			<div class="title col-md-4">
-				<h2>Our Mission</h2>
+				<h2>DEC 12, 2015</h2>
 			</div>
 			<div class="content col-md-8">
-			  <p>To become Australia&#8217;s leading student run society platform in assisting students on achieving their banking and financial planning career goals.</p>
+			  <p>UNSW Finsoc Workshop</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="banner">
-		<div class="jumbotron banner-inner">
+		<div id="mission" class="jumbotron banner-inner">
 			<div class="title col-md-4">
-				<h2>Sponsors</h2>
+				<h2>DEC 17, 2015</h2>
 			</div>
 			<div class="content col-md-8">
-			  <h1>ticker for sponsors</h1>
+			  <p>UNSW Finsoc Workshop</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner">
+		<div id="mission" class="jumbotron banner-inner">
+			<div class="title col-md-4">
+				<h2>DEC 25, 2015</h2>
+			</div>
+			<div class="content col-md-8">
+			  <p>UNSW Finsoc Workshop</p>
 			</div>
 		</div>
 	</div>
@@ -142,18 +100,13 @@
 				<img id="footer-logo" src="logo-35px_converted.png">
 			</div>
 			<div class="col-md-2 site-map">
-				<h4>ABOUT US</h4>
-				<p>Our Team</p>
-				<p>Our Values</p>
+				ABOUT US
 			</div>
 			<div class="col-md-2 site-map">
-				<h4>SPONSORS</h4>
-				<p>Our Sponsors</p>
-				<p>Apply</p>
+				SPONSORS
 			</div>
 			<div class="col-md-2 site-map">
-				<h4>EVENTS</h4>
-				<p>Latest events<p>
+				EVENTS
 			</div>
 			<div class="col-md-3" id="contacts">
 				<p>
@@ -168,6 +121,5 @@
 			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>
