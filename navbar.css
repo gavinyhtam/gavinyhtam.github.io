@@ -1,6 +1,15 @@
 .navbar {
 	background-color: white;
 	border-color: white;
+	height: 65px;
+}
+
+.navbar-header {
+	height: 65px;
+}
+
+.navbar-header > button {
+	margin-top: 12px;
 }
 
 body {
@@ -9,6 +18,15 @@ body {
 
 .navbar-toggle {
 	background-color: black;
+}
+
+#header-logo {
+	max-height: 30px;
+}
+
+#navbar-container nav {
+	display: inline;
+	float: right;
 }
 
 #top-navbar a {
@@ -27,12 +45,12 @@ body {
 }
 
 #top-navbar {
-	margin-top: 8px;
-	margin-bottom: 8px;
+	padding-top: 8px;
+	background-color: white;
 }
 
 #social-media-bar {
-	padding-left: 30px;
+	margin: 10px 20px 0px 30px;
 }
 
 #facebook-icon {

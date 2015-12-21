@@ -2,60 +2,63 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="navbar.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="events.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="footerFormat.js"></script>
+	<script> 
+		$(function(){
+		 	$("#finsoc-navbar").load("navbar.html"); 
+			$("#footer").load("footer.html");
+		});
+	</script> 
 	<title>UNSW FINSOC</title>
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+<div id="wrapper">
     <!--script> 
 		 $(function(){
 		   $("#finsoc-navbar").load("http://gavinyhtam.github.io/navbar.html"); 
 		 });
     </script-->
-	<div id="finsoc-navbar">
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		 <div class="container">
-			  <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar">
-			         <span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-			      </button>
-			      <a class="navbar-brand" href="index.html"><img src="logo-35px_converted.png"></a>
-			  </div>
-			  <div id="top-navbar" class="navbar-collapse collapse">
-			      <ul class="nav navbar-nav navbar-right">
-						<li class="navbar-item"><a href="events.html">Events</a></li>
-						<li class="navbar-item"><a href="sponsorship.html">Sponsorship</a></li>
-			         <li class="navbar-item"><a href="about.html">About Us</a></li>
-						<li class="navbar-item"><a href="newsletter.html">Newsletter</a></li>
-						<li class="navbar-item"><a href="contact-us.html">Contact Us</a></li>
-						<li>
-							<nav id="social-media-bar">
-								 <a href="https://www.facebook.com/UNSWFinanceSociety/?fref=ts" target="_blank">
-									<i class="fa fa-facebook-square fa-3x"></i>
-								 </a>
-								 <a href="/" target="_blank">
-									<i class="fa fa-linkedin-square fa-3x"></i>
-								 </a>
-								 <a href="https://twitter.com/finsoc" target="_blank">
-									<i class="fa fa-twitter-square fa-3x"></i>
-								 </a>
-							</nav>
-						</li>
-			      </ul>
-			  </div>
-		 </div>
-	</div>
+	<script>
+	  window.fbAsyncInit = function() {
+		 FB.init({
+		   appId      : '876814169101253',
+		   xfbml      : true,
+		   version    : 'v2.5'
+		 });
 
-	</div>
+		/* make the API call */
+		//TODO get app access token
+		FB.api(
+			 "/148979452123911/events", 
+			 function (response) {
+				console.log(response);
+				if (response && !response.error) {
+				  if (response.data != null) {
+						document.getElementById("test").innerHTML += response.data[0].description;
+					}
+				}
+			 }
+		);
+	  };
+
+	  (function(d, s, id){
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/sdk.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div id="finsoc-navbar"></div>
 
 	<div class="title">
 		<h1>EVENTS</h1>
@@ -63,63 +66,38 @@
 
 	<div class="banner">
 		<div id="mission" class="jumbotron banner-inner">
-			<div class="title col-md-4">
-				<h2>DEC 12, 2015</h2>
+			<div class="date col-md-4">
+				<h2>12/12</h2>
 			</div>
 			<div class="content col-md-8">
-			  <p>UNSW Finsoc Workshop</p>
+			  <p>FINSOC Sample Event</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="banner">
 		<div id="mission" class="jumbotron banner-inner">
-			<div class="title col-md-4">
-				<h2>DEC 17, 2015</h2>
+			<div class="date col-md-4">
+				<h2>17/12<h2>
 			</div>
 			<div class="content col-md-8">
-			  <p>UNSW Finsoc Workshop</p>
+			  <p>FINSOC Sample Event</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="banner">
 		<div id="mission" class="jumbotron banner-inner">
-			<div class="title col-md-4">
-				<h2>DEC 25, 2015</h2>
+			<div class="date col-md-4">
+				<h2>25/12</h2>
 			</div>
 			<div class="content col-md-8">
-			  <p>UNSW Finsoc Workshop</p>
+			  <p>FINSOC Sample Event</p>
 			</div>
 		</div>
 	</div>
 
-	<div id="footer" class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<img id="footer-logo" src="logo-35px_converted.png">
-			</div>
-			<div class="col-md-2 site-map">
-				ABOUT US
-			</div>
-			<div class="col-md-2 site-map">
-				SPONSORS
-			</div>
-			<div class="col-md-2 site-map">
-				EVENTS
-			</div>
-			<div class="col-md-3" id="contacts">
-				<p>
-					<span id="footer-icon" class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-					Kensington, New South Wales
-				</p>
-				<p>
-					<span id="footer-icon" class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-					finsoc2016@hotmail.com
-				</p>
-				<p>Produced by UNSW Finsoc &copy 2015-16</p>
-			</div>
-		</div>
-	</div>
+	<div id="footer" class="container"></div>
+</div>
 </body>
 </html>

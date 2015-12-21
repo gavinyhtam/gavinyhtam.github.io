@@ -6,11 +6,28 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	height: 100%;
+	background-color: whitesmoke !important;
 }
 
 #wrapper {
 	min-height: 100%;
 	position: relative;
+}
+
+.title {
+	text-align: center;
+	padding: 20px 0px;
+	color: #999999;
+}
+
+.title h1 {
+	font-size: 4em;
+	letter-spacing: 5px;
+}
+
+.title h2 {
+	font-size: 3em;
+	letter-spacing: 2px;
 }
 
 h1, h2 {
@@ -23,10 +40,6 @@ h1, h2 {
 
 .white-colour-link:hover {
 	color: white;
-}
-
-.arrow-link {
-	padding-right: 10px;
 }
 
 button {
@@ -56,9 +69,12 @@ button:hover {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-top: 10px solid #337AB7;
-  	/*display: flex;
-  	align-items : center;
-	*/
+}
+
+#footer a {
+	display: block;
+	color: white;
+	padding: 5px 0px;
 }
 
 #footer p {
@@ -67,12 +83,14 @@ button:hover {
 }
 
 .site-map {
+	display: block;
 	color: #888888;
 	padding-bottom: 20px;
 }
 
 #footer-logo {
 	max-height: 30px;
+	margin-bottom: 20px;
 }
 
 #contacts > * {
@@ -87,7 +105,10 @@ button:hover {
 	padding-right: 20px;
 }
 
-#footer-icon {
+.glyphicon-map-marker {
 	color: red;
 }
 
+.glyphicon-envelope {
+	color: #00CCFF;
+}

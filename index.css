@@ -1,14 +1,15 @@
 .jumbotron {
 	text-align: center;
+	margin-bottom: 0px;
 }
 
-body {
-	/*background-color: #003366;*/
+/*body {
 	background: -webkit-linear-gradient(left, #003366, #000000);
   background: -o-linear-gradient(left, #003366, #000000);
   background: -moz-linear-gradient(left, #003366, #000000);
   background: linear-gradient(left, #003366, #000000);
 }
+*/
 
 .banner-inner {
 	width: 100%;
@@ -18,18 +19,22 @@ body {
 }
 
 .content {
-	padding: 20px;
+	padding: 20px 50px;
 }
 
 #mission {
-	/*background: url("test.jpg") no-repeat; */
+	background-color: #1b3978;
 }	
+
+#sponsors {
+	background-color: whitesmoke;
+	color: #007bb5;
+}
 
 /* Events */
 
 #events-carousel {
 	position: relative;
-	margin-bottom: 30px;
 }
 
 #event-box {
@@ -52,4 +57,21 @@ body {
 .carousel-img > img {
 	width: 100%;
 	height: auto;
+}
+
+.arrow-link {
+	padding-right: 10px;
+	color: red;
+}
+
+/* Sponsors */
+
+#sponsor-carousel .item {
+  margin: 10px 20px;
+}
+
+#sponsor-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

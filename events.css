@@ -1,0 +1,22 @@
+.jumbotron {
+	text-align: center;
+}
+
+.banner {
+	padding-bottom: 20px;
+}
+
+.banner-inner {
+	width: 100%;
+	min-height: 200px;
+	background-color: white;
+	color: gray;
+}
+
+.content {
+	padding: 20px;
+}
+
+.date {
+	font-family: 'Helvetica'
+}
