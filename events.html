@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="navbar.css">
@@ -21,43 +22,6 @@
 </head>
 <body>
 <div id="wrapper">
-    <!--script> 
-		 $(function(){
-		   $("#finsoc-navbar").load("http://gavinyhtam.github.io/navbar.html"); 
-		 });
-    </script-->
-	<script>
-	  window.fbAsyncInit = function() {
-		 FB.init({
-		   appId      : '876814169101253',
-		   xfbml      : true,
-		   version    : 'v2.5'
-		 });
-
-		/* make the API call */
-		//TODO get app access token
-		FB.api(
-			 "/148979452123911/events", 
-			 function (response) {
-				console.log(response);
-				if (response && !response.error) {
-				  if (response.data != null) {
-						document.getElementById("test").innerHTML += response.data[0].description;
-					}
-				}
-			 }
-		);
-	  };
-
-	  (function(d, s, id){
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) {return;}
-		  js = d.createElement(s); js.id = id;
-		  js.src = "https://connect.facebook.net/en_US/sdk.js";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-
 	<div id="finsoc-navbar"></div>
 
 	<div class="title">
@@ -65,34 +29,29 @@
 	</div>
 
 	<div class="banner">
-		<div id="mission" class="jumbotron banner-inner">
-			<div class="date col-md-4">
-				<h2>12/12</h2>
+		<div class="banner-inner">
+			<div class="date col-md-2">
+				15/2
 			</div>
-			<div class="content col-md-8">
-			  <p>FINSOC Sample Event</p>
+			<div class="event-img col-md-4">
+				<img src="events/o_week_promoter_team.jpg" alt="O-Week Promoter Team Applications">
 			</div>
-		</div>
-	</div>
-
-	<div class="banner">
-		<div id="mission" class="jumbotron banner-inner">
-			<div class="date col-md-4">
-				<h2>17/12<h2>
-			</div>
-			<div class="content col-md-8">
-			  <p>FINSOC Sample Event</p>
+			<div class="content col-md-6">
+			  O-Week Promoter Team Applications
 			</div>
 		</div>
 	</div>
 
 	<div class="banner">
-		<div id="mission" class="jumbotron banner-inner">
-			<div class="date col-md-4">
-				<h2>25/12</h2>
+		<div class="banner-inner">
+			<div class="date col-md-2">
+				2/3
 			</div>
-			<div class="content col-md-8">
-			  <p>FINSOC Sample Event</p>
+			<div class="event-img col-md-4">
+				<img src="events/investment_banking_consulting_evening.png" alt="Investment Banking and Consulting Evening">
+			</div>
+			<div class="content col-md-6">
+			  Investment Banking and Consulting Evening
 			</div>
 		</div>
 	</div>

@@ -1,9 +1,13 @@
+#wrapper {
+	padding-bottom: 20px;
+}
+
 .jumbotron {
 	text-align: center;
 }
 
 .banner {
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .banner-inner {
@@ -11,12 +15,24 @@
 	min-height: 200px;
 	background-color: white;
 	color: gray;
-}
-
-.content {
 	padding: 20px;
 }
 
+.banner-inner > div {
+	margin-bottom: 20px;
+}
+
+.content {
+	padding: 0px 20px;
+}
+
 .date {
-	font-family: 'Helvetica'
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	text-align: center;
+}
+
+.event-img > img {
+	width: 100%;
 }
